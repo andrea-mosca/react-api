@@ -1,0 +1,23 @@
+Esercizio
+E’ arrivato il momento di mettere insieme i concetti appresi creiamo una piccola app che ci mostri un elenco di attori o attrici.
+Usate uno di questi due endpoint, a piacimento:
+https://lanciweb.github.io/demo/api/actresses/
+https://lanciweb.github.io/demo/api/actors/
+MILESTONE 1
+Al caricamento dell'applicazione, recuperiamo la lista degli attori e delle attrici dalle API e stampiamoli in console.
+MILESTONE 2
+Prepariamo una card per ciascun attore/attrice, mostrandone le seguenti informazioni:
+nome
+anno nascita
+nazionalità
+biografia
+immagine
+riconoscimenti
+MILESTONE 3
+Mostriamo in pagina una card per ciascun attore, con grafica a piacimento!
+BONUS 1 :rilassato:
+Stampare sia una lista delle attrici che degli attori, separatamente.
+BONUS 2 :occhiali_da_sole:
+Stampare un’unica lista che contiene attori e attrici insieme!
+BONUS 3 :testa_che_esplode:
+Inserire un filtro di ricerca che permetta di cercare gli attori o le attrici per nome.
