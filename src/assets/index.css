@@ -2,3 +2,16 @@
   height: 390px;
   object-fit: cover;
 }
+body{
+  background: linear-gradient(
+  to right,
+  rgba(241, 11, 11, 0.841),
+  rgba(189, 199, 3, 0.905)
+);
+}
+#card-container{
+  background: rgba(255, 255, 255, 0);
+}
+.card{
+  border: 3px solid black;
+}

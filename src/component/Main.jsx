@@ -13,10 +13,11 @@ export default function Main() {
 
   return (
     <main>
-      <div className="container">
+      <div id="card-container" className="container my-5">
+        <h1 className="fs-1 fw-bold">Actor list</h1>
         <div className="row row-cols-4">
           {results.map((result, id) => (
-            <div className="col" key={result.id}>
+            <div className="col g-4" key={result.id}>
               <div className="card h-100">
                 <img
                   src={result.image}
