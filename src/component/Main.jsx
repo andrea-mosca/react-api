@@ -31,14 +31,19 @@ export default function Main() {
   return (
     <main>
       <div className="container">
-        <h2 className="mt-5">search actor name</h2>
-        <div className="d-flex gap-2">
-          <input
-            type="text"
-            placeholder="es: Russel Crowe"
-            value={textFilter}
-            onChange={(e) => setTextFilter(e.target.value)}
-          />
+        <div
+          id="filter-container"
+          className="mt-5 d-flex flex-column align-items-center"
+        >
+          <h2 className="">search actor name</h2>
+          <div className="d-flex gap-2">
+            <input
+              type="text"
+              placeholder="es: Russel Crowe"
+              value={textFilter}
+              onChange={(e) => setTextFilter(e.target.value)}
+            />
+          </div>
         </div>
         <div id="card-container" className="my-5 d-flex gap-5">
           {/* <div className="row row-cols-2">
@@ -109,19 +114,19 @@ export default function Main() {
                     alt={result.name}
                     className="card-img-top w-100"
                   />
-                  <div className="card-body">
+                  <div className="card-body border border-dark">
                     <h5 className="card-title">{result.name}</h5>
                     <p className="card-text">{result.biography}</p>
                   </div>
-                  <ul className="list-group list-group-flush">
-                    <li className="list-group-item">
-                      Anno di nascita: {result.birth_year}
+                  <ul className="list-group list-group-flush border border-dark">
+                    <li className="list-group-item border border-dark">
+                      Birth year: {result.birth_year}
                     </li>
-                    <li className="list-group-item">
-                      Nazionalità: {result.nationality}
+                    <li className="list-group-item border border-dark">
+                      Nazionality: {result.nationality}
                     </li>
-                    <li className="list-group-item">
-                      Riconoscimenti: {result.awards}
+                    <li className="list-group-item border border-dark">
+                      Awards: {result.awards}
                     </li>
                   </ul>
                 </div>

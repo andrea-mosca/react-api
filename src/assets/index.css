@@ -1,3 +1,17 @@
+#filter-container{
+  border: 10px inset white;
+  width: 30%;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  
+}
+#filter-container input{
+  max-width: 100%;
+}
+
+
+
 .card> img{
   height: 390px;
   object-fit: cover;
