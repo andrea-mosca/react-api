@@ -22,7 +22,9 @@ export default function Main() {
   }, [resultsActors, resultsActresses]);
   useEffect(() => {
     setFilteredActors(
-      resultsUnique.filter((actor) => actor.name.includes(textFilter))
+      resultsUnique.filter((actor) =>
+        actor.name.toLowerCase().includes(textFilter.toLowerCase())
+      )
     );
   }, [textFilter, resultsUnique]);
 
